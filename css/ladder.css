@@ -1,0 +1,193 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navBar {
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: #3e3e3e;
+  width: 100%;
+}
+
+.logo {
+  width: 500px;
+  height: auto;
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-left: 50px;
+}
+
+.menu {
+  position: absolute;
+  right: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.navBar ul {
+  color: white;
+  list-style: none;
+  margin-top: 0;
+  display: flex;
+}
+
+.presentationContainer {
+  background: url("../images/apple-email-iphone-17663.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  display: table;
+  background-attachment: fixed;
+}
+
+.presentationContainer h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 300px;
+  margin-left: 100px;
+}
+
+.presentationContainer h2 {
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.presentationContainer h3 {
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.aboutContainer {
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+.aboutContainer h1 {
+  font-family: 'Nunito', sans-serif;
+  color: rgb(216, 0, 0);
+  letter-spacing: 5px;
+  font-size: 70px;
+  padding-top: 100px;
+  margin-left: 300px;
+}
+
+.aboutContainer h2 {
+  font-family: 'Nunito', sans-serif;
+  color: rgb(216, 0, 0);
+  font-size: 70px;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  margin-left: 300px;
+}
+
+.story {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  background: white;
+}
+
+.storyLogo {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: url('../images/pentagon_story.png');
+  background-size: cover;
+}
+
+.storyContent {
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  color: black;
+  text-align: justify;
+  font-size: 14px;
+  background: white;
+  line-height: 20px;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 30px;
+}
+
+.storyContent h3 {
+  font-size: 40px;
+  color: rgb(50, 163, 175);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.vision {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  background: white;
+}
+
+.visionLogo {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: url('../images/pentagon_vision.png');
+  background-size: cover;
+}
+
+.visionContent {
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  color: black;
+  text-align: justify;
+  font-size: 14px;
+  background: white;
+  line-height: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.visionContent h3 {
+  font-size: 40px;
+  color: rgb(50, 163, 175);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.projects {
+  width: 100%;
+  height: 800px;
+  background: #3e3e3e;
+}
