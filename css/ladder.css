@@ -128,8 +128,9 @@ a {
   width: 200px;
   height: 200px;
   margin: auto;
-  background: url('../images/pentagon_story.png');
-  background-size: cover;
+  background: url('../images/story_pentagon.png') no-repeat;
+  background-position: center;
+  background-size: 200px;
 }
 
 .storyContent {
@@ -164,8 +165,9 @@ a {
   width: 200px;
   height: 200px;
   margin: auto;
-  background: url('../images/pentagon_vision.png');
-  background-size: cover;
+  background: url('../images/eye_pentagon.png') no-repeat;
+  background-size: 200px;
+  background-position: center;
 }
 
 .visionContent {
@@ -240,4 +242,93 @@ img {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid white;
+}
+
+/* .team {
+
+} */
+
+.contactInfo {
+  width: 100%;
+  height: 400px;
+  background: rgb(255, 141, 18)
+}
+
+.contactInfo h1{
+  font-family:'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.contactInfo h2{
+  font-family:'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding-top: 10px;
+  color: white;
+}
+
+.contactInfo h3{
+  font-family:'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
+  color: white;
+}
+
+.nameAndEmailForm {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#name, #email {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.subjectForm {
+  text-align: center;
+}
+
+#subject {
+  width: 610px;
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+#sendButton {
+  width: 615px;
+  height: 30px;
+  font-size: 15px;
+  background: rgb(50, 163, 175);
+  margin: auto;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: black;
+  font-size: 14px;
+  font-family:'Quicksand', sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+}
+
+footer span {
+  margin: 10px;
 }
