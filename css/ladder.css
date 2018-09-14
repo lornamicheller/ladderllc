@@ -14,50 +14,83 @@ a {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-}
-
-.navBar {
-  position: fixed;
-  height: 80px;
-  overflow: hidden;
+/* navagation bar */
+header {
+  position: absolute;
   top: 0;
-  display: flex;
-  align-items: center;
+  left: 0;
+  padding: 0 100px;
   background: #3e3e3e;
   width: 100%;
+  box-sizing: border-box;
+}
+
+header .logo {
+  color: rgb(255, 255, 255);
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: 700px;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 20px;
 }
 
 .logo {
-  width: 500px;
-  height: auto;
-  float: left;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  margin-left: 50px;
+  width: 200px;
+  background: url("../images/ladder-logo.png") no-repeat;
+  background-size: 35px;
+  background-position: left;
 }
 
-.menu {
-  position: absolute;
-  right: 20px;
+.logo span {
+  margin-left: 60px;
 }
 
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: 300;
-  margin: 20px;
+header nav {
+  float: right;
+  height: 70px;
+  margin-top: 20px;
+  
 }
 
-.navBar ul {
-  color: white;
-  list-style: none;
-  margin-top: 0;
+header nav ul {
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  display: block;
+}
+
+header nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.721);
+  border-bottom: 1px solid white;
+  font-size: 17px;
+  font-weight: 700px;
+}
+
+.menu-toggle {
+  color: white;
+  background: #3e3e3e;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* presentation section */
 .presentationContainer {
   background: url("../images/apple-email-iphone-17663.jpg");
   background-size: cover;
@@ -68,137 +101,43 @@ a {
 }
 
 .presentationContainer h1 {
-  color: white;
+  color: rgba(255, 255, 255, 0.659);
   font-size: 20px;
   margin-top: 400px;
   text-align: center;
 }
 
 .presentationContainer h2 {
-  color: white;
+  color: rgba(255, 255, 255, 0.659);
   font-size: 80px;
   font-weight: 700;
   text-align: center;
   margin-top: 10px;
 }
 
-/* old title */
-
-/* .presentationContainer h3 {
-  color: white;
-  font-size: 80px;
-  font-weight: 700;
-  margin-left: 100px;
-  margin-top: 10px;
-} */
-
-.aboutContainer {
+.divisor-1 {
   width: 100%;
-  height: auto;
-  background: white;
-  padding-bottom: 30px;
+  height: 100px;
+  background: black;
 }
 
-.aboutContainer h1 {
-  font-family: 'Nunito', sans-serif;
-  color: rgb(216, 0, 0);
-  letter-spacing: 5px;
-  font-size: 70px;
-  padding-top: 100px;
-  margin-left: 300px;
+.divisor-2 {
+  width: 100%;
+  height: 100px;
+  background: black;
 }
 
-.aboutContainer h2 {
-  font-family: 'Nunito', sans-serif;
-  color: rgb(216, 0, 0);
-  font-size: 70px;
-  letter-spacing: 5px;
-  margin-top: 10px;
-  margin-left: 300px;
-}
-
-.story {
-  display: flex;
-  width: 800px;
-  height: 400px;
-  margin: auto;
-  background: white;
-}
-
-.storyLogo {
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  background: url('../images/story_pentagon.png') no-repeat;
-  background-position: center;
-  background-size: 200px;
-}
-
-.storyContent {
-  width: 400px;
-  height: 200px;
-  margin: auto;
-  color: black;
-  text-align: justify;
-  font-size: 14px;
-  background: white;
-  line-height: 20px;
-  font-family: 'Quicksand', sans-serif;
-  padding-top: 30px;
-}
-
-.storyContent h3 {
-  font-size: 40px;
-  color: rgb(50, 163, 175);
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.vision {
-  display: flex;
-  width: 800px;
-  height: 400px;
-  margin: auto;
-  background: white;
-}
-
-.visionLogo {
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  background: url('../images/eye_pentagon.png') no-repeat;
-  background-size: 200px;
-  background-position: center;
-}
-
-.visionContent {
-  width: 400px;
-  height: 200px;
-  margin: auto;
-  color: black;
-  text-align: justify;
-  font-size: 14px;
-  background: white;
-  line-height: 20px;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.visionContent h3 {
-  font-size: 40px;
-  color: rgb(50, 163, 175);
-  text-align: center;
-  padding-bottom: 20px;
-}
-
+/* Fialy Project */
 .projects {
   width: 100%;
   height: auto;
-  background: #3e3e3e;
+  background: white;
 }
 
 .project-presentation {
+  display: flex;
   width: 100%;
-  height: 600px;
+  height: 400px;
   background: url('../images/ipad-pen.jpg');
   background-size: cover;
   background-position: center;
@@ -207,7 +146,7 @@ a {
   font-weight: 700;
   letter-spacing: 3px;
   text-align: center;
-  padding-top: 500px;
+  padding-top: 200px;
   display: table;
   background-attachment: fixed;
 }
@@ -218,7 +157,7 @@ a {
   color: rgb(225, 86, 35);
   letter-spacing: 5px;
   font-size: 70px;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -230,8 +169,8 @@ a {
 }
 
 .fialy-image {
-  width: 900px;
-  height: 650px;
+  width: 640px;
+  height: 459px;
   margin: auto;
   background-image: url('../images/fialy.png');
   background-size: contain;
@@ -269,7 +208,8 @@ a {
   font-size: 15px;
 }
 
-.contactInfo {
+/* Contact Info */
+/* .contactInfo {
   width: 100%;
   height: 800px;
   background: rgb(255, 141, 18)
@@ -337,19 +277,214 @@ a {
   font-size: 15px;
   text-align: center;
   padding-top: 10px;
-}
-
-footer {
+} */
+/* Footer Section */
+#contactInfo {
   width: 100%;
-  height: 80px;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background: black;
   font-size: 14px;
-  font-family:'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: white;
   text-align: center;
-  padding-top: 60px;
+  line-height: 25px;
 }
 
-footer span {
-  margin: 10px;
+/* mobile styles */
+@media(max-width: 580px) {
+
+  /* navagation bar */
+  header {
+    padding: 0 20px;
+    background: #3e3e3e;
+  }
+
+  header .logo {
+    color: white;
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 250px;
+    background: url("../images/ladder-logo.png") no-repeat;
+    background-size: 30px;
+    background-position: left;
+  }
+
+  .menu-toggle {  
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #3e3e3e;
+    top: 30px;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  header nav ul li a {
+    color: white;
+    border-bottom: 1px solid #3e3e3e;
+  }
+
+  /* presentation section */
+  .presentationContainer {
+    background: url("../images/iphone-hand.jpg") no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 950px;
+    display: table;
+    background-attachment: fixed;
+  }
+
+  .presentationContainer h1 {
+    color: rgba(255, 255, 255, 0.659);
+    font-size: 20px;
+    margin-top: 400px;
+    text-align: center;
+  }
+
+  .presentationContainer h2 {
+    color: rgba(255, 255, 255, 0.659);
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* projects */
+  .projects {
+    width: 100%;
+    height: auto;
+    background: #3e3e3e;
+  }
+
+  .project-presentation {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background: url('../images/ipad-pen-copy.jpg') no-repeat;
+    background-size: contain;
+    background-position: right;
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 200px;
+    display: table;
+    background-attachment: fixed;
+  }
+
+  .projects h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: rgb(225, 86, 35);
+    letter-spacing: 5px;
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .fialy-container {
+    width: 100%;
+    height: auto;
+    background: #3e3e3e;
+    margin: auto;
+  }
+
+  .fialy-image {
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/fialy-copy.png');
+    background-size: 426px;
+    background-position: center;
+  }
+
+  .fialy-content {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 20px;
+    background: white;
+  }
+
+  .fialy-content p {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+  }
+
+  #download-app-btn {
+    margin: auto;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    background: black;
+    border: solid 2px black;
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  /* Footer */
+  footer {
+    display: none;
+  }
+
+  #contactInfo {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    line-height: 30px;
+    width: 100%;
+    height: auto;
+    background: rgb(0, 0, 0);
+    color: white;
+  }
+
+  #contactInfo h1 {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: white;
+  }
+}
+
+@media(max-width: 765px) {
+  .logo {
+    width: 158px;
+    font-size: 12px;
+  }
+
+  header .logo {
+    font-size: 16px;
+  }
 }
